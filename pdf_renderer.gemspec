@@ -11,13 +11,14 @@ Gem::Specification.new do |s|
   s.email       = ["Kineta.Jiang@gmail.com"]
   s.homepage    = "https://github.com/kineta-Jiang"
   s.summary     = "Create a Custom render to render pdf"
-  s.description = "TODO: Description of PdfRenderer."
+  s.description = "Add to Controller a custom render format"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.1.0"
+  s.add_dependency 'prawn', '~> 1.0.0'
 
   s.add_development_dependency "sqlite3"
 end
